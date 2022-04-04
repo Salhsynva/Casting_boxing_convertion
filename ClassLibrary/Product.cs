@@ -1,0 +1,18 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Text;
+
+namespace ClassLibrary
+{
+    public class Product
+    {
+        public int No { get; set; }
+        public string Name { get; set; }
+        public double Price { get; set; }
+        public double DiscountPercent { get; set; }
+        public virtual void ShowInfo()
+        {
+            Console.WriteLine($"mehsulun adi: {Name} - nomresi: {No} - qiymeti: {Price} - endirim faizi: {DiscountPercent}");
+        }
+    }
+}
